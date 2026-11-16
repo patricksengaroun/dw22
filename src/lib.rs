@@ -24,7 +24,7 @@ use event::Event;
 /// ```
 pub fn event_summary(event: Event) -> String {
     let name = label(event);
-    let lost = days_lost(event)
+    let lost = days_lost(event);
     let food = food_change(event);
     format!("{}: days lost {}, food change {}", name, lost, food)
 }
